@@ -1,11 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>to-do list</title>
+
+    <link rel="stylesheet" href="/index.css">
+
 </head>
+
+<h1>todos</h1>
+
+<div class="add-task">
+    <input type="text" id="task-input" placeholder="Добавить новую задачу">
+    <button id="add-button">add</button>
+</div>
+
+<div class="tasks">
+    <h2>active</h2>
+    <ul id="active-tasks">
+    </ul>
+    <h2>completed</h2>
+    <ul id="completed-tasks">
+    </ul>
+</div>
+
+<button id="clear-button">Clrar completed</button>
+
 <body>
     <script src="/index.html"></script>
 </body>
+
 </html>
