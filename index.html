@@ -1,35 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>to-do list</title>
-
+    <title>Todos</title>
     <link rel="stylesheet" href="/index.css">
-
 </head>
-
-<h1>todos</h1>
-
-<div class="add-task">
-    <input type="text" id="task-input" placeholder="Добавить новую задачу">
-    <button id="add-button">add</button>
-</div>
-
-<div class="tasks">
-    <h2>active</h2>
-    <ul id="active-tasks">
-    </ul>
-    <h2>completed</h2>
-    <ul id="completed-tasks">
-    </ul>
-</div>
-
-<button id="clear-button">Clrar completed</button>
-
 <body>
-    <script src="/index.html"></script>
+    <h1>todos</h1>
+    <section class="todobody">
+        <header>
+            <div class="add-task">
+                <button id="toggleList">&#9660</button>
+                <input type="text" id="taskInput" placeholder="What needs to be done?">
+            </div>
+        </header>
+        <main>
+        </main>
+        <footer>
+            <ul class="filters">
+                <li>
+                    <span href="">0 item left</span>
+                </li>
+                <ul>
+                    <li>
+                        <a href="#/" class="links">All</a>
+                    </li>
+                    <li>
+                        <a href="#/active" class="links">Active</a>
+                    </li>
+                    <li>
+                        <a href="#/completed" class= "links">Completed</a>
+                    </li>
+                </ul>
+                <li>
+                    <a href="#/" class="clearCompletedTasks">Clear completed</a>
+                </li>
+            </ul>
+        </footer>
+    </section>
+    <script src="/index.js"></script>
 </body>
-
 </html>
