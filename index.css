@@ -41,8 +41,8 @@ a:link {
 }
 
 .clearCompleted {
-    position: absolute;
-    right: 115px;
+    position: relative;
+    left: 53px;
 }
 
 .clearCompletedTasks:hover {
@@ -51,6 +51,13 @@ a:link {
 
 .links {
     margin: 0 5px;
+}
+
+.activeLinks {
+    border: 1px solid rgba(193, 62, 42, 0.3);
+    border-radius: 0.5em;
+    background-color: rgba(193, 62, 42, 0.1);
+    color: rgba(193, 62, 42, 0.7);
 }
 
 .links:hover {
@@ -65,6 +72,10 @@ span {
 
     margin: auto;
     padding: auto;
+}
+
+div {
+    border-bottom: 1px solid #ededed;
 }
 
 
@@ -87,6 +98,10 @@ h1 {
     padding: 0;
 }
 
+footer {
+    padding: 1rem 0;
+}
+
 .add-task {
     padding: 10px;
     margin: 10px;
@@ -100,6 +115,7 @@ h1 {
 }
 
 .filters {
+    margin: 0;
     padding: 0;
 }
 
@@ -112,7 +128,7 @@ h1 {
     display: flex;
     height: 100%;
 
-    margin-left: 4rem;
+    padding-left: 2.5rem;
 }
 
 .deleteButton {
@@ -185,9 +201,4 @@ h1 {
   &:checked::after {
     opacity: 1;
   }
-}
-
-.functionFilters {
-    position: absolute;
-    left: 215px;
 }
