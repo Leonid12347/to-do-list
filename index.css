@@ -12,7 +12,6 @@ ul {
     list-style-type: none;
     
     display: flex;
-    justify-content: space-between;
 }
 
 li {
@@ -39,6 +38,11 @@ a {
 
 a:link {
     text-decoration: wavy;
+}
+
+.clearCompleted {
+    position: absolute;
+    right: 115px;
 }
 
 .clearCompletedTasks:hover {
@@ -96,9 +100,6 @@ h1 {
 }
 
 .filters {
-    display: flex;
-    justify-content: space-between;
-
     padding: 0;
 }
 
@@ -184,4 +185,9 @@ h1 {
   &:checked::after {
     opacity: 1;
   }
+}
+
+.functionFilters {
+    position: absolute;
+    left: 215px;
 }
