@@ -3,9 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Todos</title>
+    <link rel="stylesheet" href="/index.css">
 </head>
 <body>
-    <script src="/index.html"></script>
+    <h1>todos</h1>
+    <section class="todobody">
+        <header>
+            <div class="add-task">
+                <button id="toggleList">&#9660</button>
+                <input type="text" id="taskInput" placeholder="What needs to be done?">
+            </div>
+        </header>
+        <main>
+        </main>
+        <footer>
+            <ul class="filters">
+                <li>
+                    <span class="task-counter">0 items left</span>
+                </li>
+                <ul class="functionFilters">
+                    <li>
+                        <a href="#/" class="all activeLinks links">All</a>
+                    </li>
+                    <li>
+                        <a href="#/active" class="active links">Active</a>
+                    </li>
+                    <li>
+                        <a href="#/completed" class="completed links">Completed</a>
+                    </li>
+                </ul>
+                <li class="clearCompleted">
+                    <a href="#/" class="clearCompletedTasks">Clear completed</a>
+                </li>
+            </ul>
+        </footer>
+    </section>
+    <script src="/index.js"></script>
 </body>
 </html>
